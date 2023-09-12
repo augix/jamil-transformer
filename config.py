@@ -5,15 +5,18 @@ def get_config():
         "batch_size": 8,
         "num_epochs": 20,
         "lr": 10**-4,
-        "seq_len": 350,
-        "d_model": 512,
-        "lang_src": "en",
-        "lang_tgt": "it",
+        "seq_len": 102,
+        "dropout": 0.1,
+        "num_layers": 3,
+        "num_heads": 6,
+        "d_model": 36,
+        "lang_src": "before_ko",
+        "lang_tgt": "ko",
         "model_folder": "weights",
-        "model_basename": "tmodel_",
+        "model_basename": "L3H6D36maxPos200_",
         "preload": None,
         "tokenizer_file": "tokenizer_{0}.json",
-        "experiment_name": "runs/tmodel"
+        "experiment_name": "runs/L3H6D36maxPos200"
     }
 
 def get_weights_file_path(config, epoch: str):
